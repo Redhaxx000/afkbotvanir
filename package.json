@@ -1,0 +1,15 @@
+{
+  "name": "aternos-afk-bot",
+  "version": "1.0.0",
+  "description": "A 24/7 AFK bot for cracked Aternos Minecraft servers using mineflayer.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": ["minecraft", "bot", "mineflayer", "aternos", "afk"],
+  "author": "your-github-username",
+  "license": "MIT",
+  "dependencies": {
+    "mineflayer": "^4.5.0"
+  }
+}
