@@ -1,13 +1,18 @@
-const bot = mineflayer.createBot({
-  host: 'vanirmcpe.aternos.me',
-  port: 20540,
-  username: 'vanir',
-  auth: 'offline',
-  version: '1.21.5' // ✅ exact version required
-});
+const mineflayer = require('mineflayer');
+
+function startBot() {
+  const bot = mineflayer.createBot({
+    host: 'vanirmcpe.aternos.me', // 🔁 Replace with your Aternos server address
+    port: 20540,                    // 🔁 Replace with your server's current port
+    username: 'vanir',         // You can customize this name
+    auth: 'offline',                // For cracked/offline servers
+    version: '1.21.5'               // ✅ Exact version from Aternos
+  });
 
   bot.once('spawn', () => {
     console.log('✅ Bot has joined the server.');
+
+    // Jump every 10 seconds to avoid AFK kick
     setInterval(() => {
       bot.setControlState('jump', true);
       setTimeout(() => bot.setControlState('jump', false), 500);
