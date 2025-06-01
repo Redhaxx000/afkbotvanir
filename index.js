@@ -2,8 +2,8 @@ const mineflayer = require('mineflayer');
 
 function startBot() {
   const bot = mineflayer.createBot({
-    host: 'your-server.aternos.me', // Replace with your Aternos IP
-    port: 25565,
+    host: 'vanirmcpe.aternos.me', // Replace with your Aternos IP
+    port: 20540,
     username: 'Vanir',         // Any name (for cracked servers)
     auth: 'offline'
   });
